@@ -11,9 +11,26 @@ export default class Product extends Component {
 	handleDelete() {
 		this.props.onDelete(this.props.product);
 	}
+	
+	tryRequire(path) {
+		  try {
+			  console.log(path);
+		   return require(`${path}`);
+		  } catch (err) {
+		   return null;
+		  }
+		}
+	
 linkToImage(str) {
-	return "img/"+str;
+	console.log(str);
+	return "img"+str;
 	//str.replace("https://images.rohlik.cz", "img/");		
+}
+
+linkToThumbnail(str) {
+	let thumbnail = str.replace(".jpg", "-260.jpg")
+	console.log(thumbnail);
+	return "img"+thumbnail;	
 }
 
 formatPrice(price) {
@@ -26,14 +43,19 @@ render() {
 	const disabled=this.props.product.inStock===true ? "" :"disabled";
 	const productName =this.props.product.productName.replace(" a ", " a\u00a0")
 	.replace(" s ", " s\u00a0").replace(" z ", " z\u00a0").replace(" v ", " v\u00a0");
-		return (
+	
+	return (
 
 <div className="p-grid">
 	<div className="p-grid-in">
 	<div className="p-stripe"></div>
 	<div className="p-img-container">		
 	<div className="p-img-wrapper">
-	<img className="p-img" src={this.linkToImage(this.props.product.imgPath)}/>
+	<img className="p-img" src={this.linkToThumbnail(this.props.product.imgPath)}
+	onError={(e) => {
+		  e.target.src = this.linkToImage(this.props.product.imgPath)
+		}}
+	 />
 	</div>
 	<div className="p-badge-wrapper">
 	<Badge className="p-badge" pill variant="secondary">{this.props.product.textualAmount}</Badge>

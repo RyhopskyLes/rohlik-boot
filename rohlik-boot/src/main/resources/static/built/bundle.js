@@ -65220,6 +65220,69 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/** @license MIT License (c) copyright 2010-20
 
 /***/ }),
 
+/***/ "./src/main/js sync recursive ^.*$":
+/*!*******************************!*\
+  !*** ./src/main/js sync ^.*$ ***!
+  \*******************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var map = {
+	"./AlertDismissibleExample": "./src/main/js/AlertDismissibleExample.js",
+	"./AlertDismissibleExample.js": "./src/main/js/AlertDismissibleExample.js",
+	"./Breadcrumbs": "./src/main/js/Breadcrumbs.js",
+	"./Breadcrumbs.js": "./src/main/js/Breadcrumbs.js",
+	"./MegaDropdown": "./src/main/js/MegaDropdown.js",
+	"./MegaDropdown.js": "./src/main/js/MegaDropdown.js",
+	"./MegaDropdownColumn": "./src/main/js/MegaDropdownColumn.js",
+	"./MegaDropdownColumn.js": "./src/main/js/MegaDropdownColumn.js",
+	"./MegaDropdownItem": "./src/main/js/MegaDropdownItem.js",
+	"./MegaDropdownItem.js": "./src/main/js/MegaDropdownItem.js",
+	"./MegaDropdownList": "./src/main/js/MegaDropdownList.js",
+	"./MegaDropdownList.js": "./src/main/js/MegaDropdownList.js",
+	"./Product": "./src/main/js/Product.js",
+	"./Product.js": "./src/main/js/Product.js",
+	"./SearchResult": "./src/main/js/SearchResult.js",
+	"./SearchResult.js": "./src/main/js/SearchResult.js",
+	"./Tiles": "./src/main/js/Tiles.js",
+	"./Tiles.js": "./src/main/js/Tiles.js",
+	"./api/uriListConverter": "./src/main/js/api/uriListConverter.js",
+	"./api/uriListConverter.js": "./src/main/js/api/uriListConverter.js",
+	"./api/uriTemplateInterceptor": "./src/main/js/api/uriTemplateInterceptor.js",
+	"./api/uriTemplateInterceptor.js": "./src/main/js/api/uriTemplateInterceptor.js",
+	"./app": "./src/main/js/app.js",
+	"./app.js": "./src/main/js/app.js",
+	"./client": "./src/main/js/client.js",
+	"./client.js": "./src/main/js/client.js",
+	"./follow": "./src/main/js/follow.js",
+	"./follow.js": "./src/main/js/follow.js",
+	"./megamenu.html": "./src/main/js/megamenu.html",
+	"./static/rohlik.jpg": "./src/main/js/static/rohlik.jpg",
+	"./static/rohlik.png": "./src/main/js/static/rohlik.png"
+};
+
+
+function webpackContext(req) {
+	var id = webpackContextResolve(req);
+	return __webpack_require__(id);
+}
+function webpackContextResolve(req) {
+	if(!__webpack_require__.o(map, req)) {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	}
+	return map[req];
+}
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = "./src/main/js sync recursive ^.*$";
+
+/***/ }),
+
 /***/ "./src/main/js/AlertDismissibleExample.js":
 /*!************************************************!*\
   !*** ./src/main/js/AlertDismissibleExample.js ***!
@@ -65658,6 +65721,119 @@ function (_Component) {
 
 /***/ }),
 
+/***/ "./src/main/js/MegaDropdownItem.js":
+/*!*****************************************!*\
+  !*** ./src/main/js/MegaDropdownItem.js ***!
+  \*****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return MegaDropDownItem; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+
+
+var MegaDropDownItem =
+/*#__PURE__*/
+function (_Component) {
+  _inherits(MegaDropDownItem, _Component);
+
+  function MegaDropDownItem(props) {
+    _classCallCheck(this, MegaDropDownItem);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(MegaDropDownItem).call(this, props));
+  }
+
+  _createClass(MegaDropDownItem, [{
+    key: "render",
+    value: function render() {
+      var _this = this;
+
+      var items = this.props.navigation.filter(function (category) {
+        return category.categoryId == _this.props.name;
+      }).map(function (category) {
+        return category.children;
+      });
+      var merged = [].concat.apply([], items);
+      var result = merged.filter(function (child) {
+        return child.active === true;
+      }).map(function (child) {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+          className: "small category-links",
+          key: "li" + child.categoryId + " " + child.categoryName,
+          id: "anchor-wrap"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+          key: child.categoryId + " " + child.categoryName,
+          "data-names": _this.props.parent.categoryName + ",, " + _this.props.text + ",, " + child.categoryName,
+          "data-ids": _this.props.parent.categoryId + ",, " + _this.props.name + ",, " + child.categoryId,
+          name: child.categoryId,
+          onClick: _this.props.onClick,
+          id: "anchor-wrap"
+        }, child.categoryName));
+      });
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col-md-6 col-lg-3 pb-2"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "card rounded-lg h-100 w-auto"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "collapse-header"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+        value: this.props.text,
+        className: "btn font-weight-bold font-sizer",
+        type: "button",
+        "data-toggle": "collapse",
+        "data-target": "#collapseContinents" + this.props.name,
+        "aria-expanded": "false",
+        "aria-controls": "collapseContinents" + this.props.name
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "card-body collapse",
+        id: "collapseContinents" + this.props.name,
+        "data-parent": "#accordion" + this.props.parent.categoryId
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
+        className: "list-unstyled"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+        key: this.props.name,
+        className: "category-links",
+        id: "anchor-wrap"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        key: this.props.name + " a ",
+        className: "font-weight-bold small",
+        "data-names": this.props.parent.categoryName + ",, " + this.props.text,
+        "data-ids": this.props.parent.categoryId + ",, " + this.props.name,
+        name: this.props.name,
+        onClick: this.props.onClick,
+        id: "anchor-wrap"
+      }, this.props.text)), result))));
+    }
+  }]);
+
+  return MegaDropDownItem;
+}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
+
+
+
+/***/ }),
+
 /***/ "./src/main/js/MegaDropdownList.js":
 /*!*****************************************!*\
   !*** ./src/main/js/MegaDropdownList.js ***!
@@ -65788,9 +65964,27 @@ function (_Component) {
       this.props.onDelete(this.props.product);
     }
   }, {
+    key: "tryRequire",
+    value: function tryRequire(path) {
+      try {
+        console.log(path);
+        return __webpack_require__("./src/main/js sync recursive ^.*$")("".concat(path));
+      } catch (err) {
+        return null;
+      }
+    }
+  }, {
     key: "linkToImage",
     value: function linkToImage(str) {
-      return "img/" + str; //str.replace("https://images.rohlik.cz", "img/");		
+      console.log(str);
+      return "img" + str; //str.replace("https://images.rohlik.cz", "img/");		
+    }
+  }, {
+    key: "linkToThumbnail",
+    value: function linkToThumbnail(str) {
+      var thumbnail = str.replace(".jpg", "-260.jpg");
+      console.log(thumbnail);
+      return "img" + thumbnail;
     }
   }, {
     key: "formatPrice",
@@ -65800,6 +65994,8 @@ function (_Component) {
   }, {
     key: "render",
     value: function render() {
+      var _this2 = this;
+
       var sales = this.props.product.sales;
       var sale = sales.find(function (sale) {
         return sale.type == "sale";
@@ -65819,7 +66015,10 @@ function (_Component) {
         className: "p-img-wrapper"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         className: "p-img",
-        src: this.linkToImage(this.props.product.imgPath)
+        src: this.linkToThumbnail(this.props.product.imgPath),
+        onError: function onError(e) {
+          e.target.src = _this2.linkToImage(_this2.props.product.imgPath);
+        }
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "p-badge-wrapper"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap_Badge__WEBPACK_IMPORTED_MODULE_2___default.a, {
@@ -66807,6 +67006,39 @@ module.exports = function follow(api, rootPath, relArray) {
     return entity._embedded && entity._embedded.hasOwnProperty(rel);
   }
 };
+
+/***/ }),
+
+/***/ "./src/main/js/megamenu.html":
+/*!***********************************!*\
+  !*** ./src/main/js/megamenu.html ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index.js):\nSyntaxError: C:\\Users\\RadimP\\git\\repository\\rohlik-boot\\src\\main\\js\\megamenu.html: Expected corresponding JSX closing tag for <img> (20:40)\n\n  18 |                                         <a href=\"#\">\n  19 |                                             <img src=\"http://placehold.it/450x200\" class=\"img-fluid\">\n> 20 |                                         </a>\n     |                                         ^\n  21 |                                         <div class=\"card-body\">\n  22 |                                             Put some content like this...\n  23 |                                         </div>\n    at Object.raise (C:\\Users\\RadimP\\git\\repository\\rohlik-boot\\node_modules\\@babel\\parser\\lib\\index.js:6325:17)\n    at Object.jsxParseElementAt (C:\\Users\\RadimP\\git\\repository\\rohlik-boot\\node_modules\\@babel\\parser\\lib\\index.js:3563:16)\n    at Object.jsxParseElementAt (C:\\Users\\RadimP\\git\\repository\\rohlik-boot\\node_modules\\@babel\\parser\\lib\\index.js:3531:32)\n    at Object.jsxParseElementAt (C:\\Users\\RadimP\\git\\repository\\rohlik-boot\\node_modules\\@babel\\parser\\lib\\index.js:3531:32)\n    at Object.jsxParseElementAt (C:\\Users\\RadimP\\git\\repository\\rohlik-boot\\node_modules\\@babel\\parser\\lib\\index.js:3531:32)\n    at Object.jsxParseElementAt (C:\\Users\\RadimP\\git\\repository\\rohlik-boot\\node_modules\\@babel\\parser\\lib\\index.js:3531:32)\n    at Object.jsxParseElementAt (C:\\Users\\RadimP\\git\\repository\\rohlik-boot\\node_modules\\@babel\\parser\\lib\\index.js:3531:32)\n    at Object.jsxParseElementAt (C:\\Users\\RadimP\\git\\repository\\rohlik-boot\\node_modules\\@babel\\parser\\lib\\index.js:3531:32)\n    at Object.jsxParseElementAt (C:\\Users\\RadimP\\git\\repository\\rohlik-boot\\node_modules\\@babel\\parser\\lib\\index.js:3531:32)\n    at Object.jsxParseElementAt (C:\\Users\\RadimP\\git\\repository\\rohlik-boot\\node_modules\\@babel\\parser\\lib\\index.js:3531:32)\n    at Object.jsxParseElementAt (C:\\Users\\RadimP\\git\\repository\\rohlik-boot\\node_modules\\@babel\\parser\\lib\\index.js:3531:32)\n    at Object.jsxParseElementAt (C:\\Users\\RadimP\\git\\repository\\rohlik-boot\\node_modules\\@babel\\parser\\lib\\index.js:3531:32)\n    at Object.jsxParseElementAt (C:\\Users\\RadimP\\git\\repository\\rohlik-boot\\node_modules\\@babel\\parser\\lib\\index.js:3531:32)\n    at Object.jsxParseElement (C:\\Users\\RadimP\\git\\repository\\rohlik-boot\\node_modules\\@babel\\parser\\lib\\index.js:3589:17)\n    at Object.parseExprAtom (C:\\Users\\RadimP\\git\\repository\\rohlik-boot\\node_modules\\@babel\\parser\\lib\\index.js:3596:19)\n    at Object.parseExprSubscripts (C:\\Users\\RadimP\\git\\repository\\rohlik-boot\\node_modules\\@babel\\parser\\lib\\index.js:8412:23)\n    at Object.parseMaybeUnary (C:\\Users\\RadimP\\git\\repository\\rohlik-boot\\node_modules\\@babel\\parser\\lib\\index.js:8392:21)\n    at Object.parseExprOps (C:\\Users\\RadimP\\git\\repository\\rohlik-boot\\node_modules\\@babel\\parser\\lib\\index.js:8267:23)\n    at Object.parseMaybeConditional (C:\\Users\\RadimP\\git\\repository\\rohlik-boot\\node_modules\\@babel\\parser\\lib\\index.js:8240:23)\n    at Object.parseMaybeAssign (C:\\Users\\RadimP\\git\\repository\\rohlik-boot\\node_modules\\@babel\\parser\\lib\\index.js:8187:21)\n    at Object.parseExpression (C:\\Users\\RadimP\\git\\repository\\rohlik-boot\\node_modules\\@babel\\parser\\lib\\index.js:8135:23)\n    at Object.parseStatementContent (C:\\Users\\RadimP\\git\\repository\\rohlik-boot\\node_modules\\@babel\\parser\\lib\\index.js:9958:23)\n    at Object.parseStatement (C:\\Users\\RadimP\\git\\repository\\rohlik-boot\\node_modules\\@babel\\parser\\lib\\index.js:9829:17)\n    at Object.parseBlockOrModuleBlockBody (C:\\Users\\RadimP\\git\\repository\\rohlik-boot\\node_modules\\@babel\\parser\\lib\\index.js:10405:25)\n    at Object.parseBlockBody (C:\\Users\\RadimP\\git\\repository\\rohlik-boot\\node_modules\\@babel\\parser\\lib\\index.js:10392:10)\n    at Object.parseTopLevel (C:\\Users\\RadimP\\git\\repository\\rohlik-boot\\node_modules\\@babel\\parser\\lib\\index.js:9758:10)\n    at Object.parse (C:\\Users\\RadimP\\git\\repository\\rohlik-boot\\node_modules\\@babel\\parser\\lib\\index.js:11270:17)\n    at parse (C:\\Users\\RadimP\\git\\repository\\rohlik-boot\\node_modules\\@babel\\parser\\lib\\index.js:11306:38)\n    at parser (C:\\Users\\RadimP\\git\\repository\\rohlik-boot\\node_modules\\@babel\\core\\lib\\transformation\\normalize-file.js:170:34)\n    at normalizeFile (C:\\Users\\RadimP\\git\\repository\\rohlik-boot\\node_modules\\@babel\\core\\lib\\transformation\\normalize-file.js:138:11)");
+
+/***/ }),
+
+/***/ "./src/main/js/static/rohlik.jpg":
+/*!***************************************!*\
+  !*** ./src/main/js/static/rohlik.jpg ***!
+  \***************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "data:image/jpeg;base64,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";
+
+/***/ }),
+
+/***/ "./src/main/js/static/rohlik.png":
+/*!***************************************!*\
+  !*** ./src/main/js/static/rohlik.png ***!
+  \***************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIwAAABLCAYAAACiLW8yAAAMgUlEQVR42u2cbWxb13nHf+eSlEhJpCxZb5ZfYquR1cV2/DJtUbS5eWnTLW1guMgSBNuwdVhQxNngIAuQaDCyflNQLwWGLfuSeEvtAgW2Il3gBY6d1LVVx5acyHWdxIktZUqcmDJVyTIlkSIvyXvOPtCUSYuUKJPSvZLvH7jQcy/PPfc55/75/M95zqGEUgqTYboDiwjCbAc0sx2wsbhgKcKkR7tc9nzUWYh9u8EyhMn3RaXO87XnWv98+1OIbQUICzhiugOLCPYYJoX0b9Ns5W4un4+dfm8x7fms24oyaDphcnX+TGH5Vjp4Kb/EhYQtSYsLtiTlwmL55t9ug16n2Q4opRBCTHVIup36/GZ7rqTJVX8xbCFExnPm07YCbElaXDCdPbYkFcnP20WSLBNh5ksyFsJeKAgL6JNlCGMjL5hOGEtJ0lwSd3O1l7JMLCRMnyWlkO0lz3X2NJO9EH5nfmBA7FrSLq2mGN9NCyiSLUnFb42C2FW4fBAmPkteq7wLVu8EZ0WhtZvOGMtEGLiRk8m3zFzshcjDgIKJPrj03xANTF1ipAdKqmHld8zu4oJhGcIsCUkKfQ7+QxAfy7yuJGK8HxoNCpEmW5KSMN2BokEagIFKhJG/68H48n9wOTWUAlFzD6Lp+1DYSzedMZaJMLAEJElzkJgcJfjZ/xI4/Rr6yEVa/uBByrw1UL2tULJYApYhzGKVJDlxCfXVmyjhIBL0c/WzXzIx8gnx6CSxKHxy6h22fGcXLu/6gv2xgiRZhjALuYhXtMVAZaC+fAMxfh6Bolw48axvY6K+mcG+d5DyKvrkBOM0UeNwL4kIYyfubtVWCnW1F8bPo5RMXpdxhBHC5/WwbvP38PgaqN/2F1Rv+f6SIAtYaNCbzY9ird3MyxgGhbr6G+RID4xdQCUmEAoQyVSMEKDK1+HY8BzC5SXVxlsZf6XZprPOMoRZrFBKJqfRIx+grryLigylNUlDW70D7Y5Hi/U40wljGUma703gRbVlHCJDKENHIBAlVWiN30a7+4doa74HjtLk0oCMI1PZ3iUCywx6U8hnp5zpM6TQAOr//hM0F8rbgqrcQEw6MWIT6CGdsSthlruDeMor0UprMnwqUJIW/oXcBMsQJldnFGu7YjFnSeraOYiPowChd8PoGYR0MNx/krErv0WP6AxJN3duuoeqO3xF98FMLClJGhgY4MSJEznL9PX18d577yGlzLgupeTkyZNcuHAhD0mSqOB5lDKS02qVAGMSlwqxev091K77IxwuDSWj9J09ja4nzO7aosIyhEkh9XJm2n+SS3pOnz7NgQMHpl1P4eTJk+zfvx/DMPD7/bz00kv09/cjpWT//v10dXXN7mDsGio6hJISJSVMHQYiEaZ+9ddpXP9NhAYSBzHX6qy+WjEJmQ+WlCTNVFYIMXUADA4O0tvby7Zt22hqapr2ec66wpfB0KdOp73GRJjaxnUk2En5hh9QubZ9Vv8WkyRZhjDpg9vZyuWbn5mpTGtrK6+88gq1tbV51y+EuB5dZpEZOUnjmq+hrfl9hGa5IF4QLEOYFFIv5+zZs3g8HgKBAJcuXeKxxx6jrKwMv9/PiRMnGB8fp7Gxke3bt1NZWZlRx8WLF+np6cEwDLZv305zc/O050xOTnLmzBna29vx+XwZn8ViMbq6uojH4zzwwAO43e4b/kWHZycMoCb98MV/obU8jdAcU22zZ0lFws2dcfz4cc6dO0csFqO+vp6dO3fS29vLyy+/jNfrpaGhga6uLg4fPsyLL75IQ0MDAKOjo3R2drJixQquXLnC22+/TWdnJ+vXr8+oPxgM8vrrr9PU1JRBmHg8zr59+zhy5AhPP/00paWlmb4lQte3MaQ7zw1tSrPlyAeIhk8RVRuntdGWpAJxsyQJIfB4PHR2dlJbW4uu67z66qs0NzfT0dFBeXk5fr+fPXv2sG/fPvbs2QNAOBymo6OD1tZWhoaG2LVrF729vVmjTDYfXnvtNY4ePcqzzz7LfffdN12SjHheEQYAGcLwH0ZbtmHJrCVZhjAppI812tvbaWxsBODSpUsMDg6ya9cuysvLAVi5ciUPPfQQBw8exDCS3/q6ujpaW1sBqK+vp76+nlgsltez3333XUKh0BRZskJzJqfS+bZn5H2UfhXhrlkSkmSZEVn6LCXVMR6PZ9q1RCKRcS39HKC0tDSjvvT6Z8OWLVtoaGjgyJEjBIPBjGg39eJcPpSMX480eRzxCeTV30zzYbFKkmUIM1virqGhgRUrVvDmm28SCoVQSvHVV19x7NgxNm/ejJZlNjLXPEZdXR0dHR34/X727t2LruvTfBOlNUkiqDwJI+MYo7+1TB6lUFiGMCmkJ+7Sj4qKCp555hkGBgZ46qmneP7559m9ezeVlZU8+eSTGfem7PQ6b/4813NbWlp44YUXuHjxInv37iUcDmd2WPkalDRQRiLvQ459Boa+JBJ3lt3ecP78ecrKyli3bl3G9UAgQHd3N8FgkFWrVtHW1obXm9xvMjAwQCAQ4N57750K4d3d3dTU1NDc3Ex/fz/Dw8O0tbURiUR4//332bp1Kz6fj56eHpYvX05LSwtKKT7++GMCgQBbtmzJyNWoRITIL3egEpP5d7K7Fs83foIoWVZoX5muS5YhTDESdwtlR3t2Ywyfzr+TXT489/8MzVNXaF+ZThhLS1L6ecpO/5uvXWw46rejZCLvMYySMVBySUiSZabVZm5vSCQSGIaB0+mcOk/B4XBkDKiFEDjr2tCdZajYWH4PVyq5bVNJEI5Z/Sl224uJ216ShoeHOXjwIJqm4XQ6aW9vp7u7G4Dh4WGeeOKJqSzyjXsVkdPPEb98KK8GGqqUy9eq0Uob+NojL+FZvi6v+7LAdNZYJsKksJA77hKJBG+88QaPP/44VVVVjIyMUF1dTVNTE319fZw7d466umzjDkFJ818T9x++vk0z68rAlK1HdSYuf4QeBp9XsHrHf4DDYyfuCsHNibtsSbNsZfI5ctUTiURwuVxUV1cjhKC2thaHw8Ho6CjHjh1jx44dOByOrPc6qjbibPwTkNeXCmQihx1H13UcTnC4oCT6EbHPfzGt7XOxzYRlCLPQm8B1XcftdhOLxaZyLePj48RiMQ4dOsTDDz88lTXOVo/QnLg3PQsON0rFrh/x6TYGkWgETQN3WSnuEoPop/+GEfzU7C6/JVhmDJNxYYawDIX8O44kvvjiC86cOcOjjz7K4OAgb731FhUVFUxOTrJx40ZOnTrFqlWrkFLS1tbG2rVrczqv9x8g/MFzkGN9KS7L+d1oCNeyTfi8XjyxDwGFs/4beO//2VwXJU0PM5YkzIyF5zjozUYYKSWGYeByuYDk/pdoNIrH4wGSWxxSKCkpwenMPdRTRoxwz270z386vSnCRWL5d6m4ezfuyrWEf/2XGMGPAHAs24TvT98BMacgbxOGBfovmqlnzIetYkEmjj9GfOh4xqDXvf7vKW/9EThK0C+8SuTsi8nfKwHxkjsIlX+bilV/SM1djyAcrnzIbxMGEyRpPiD1a0wcfYT48CkASlbvpGL7ATSXl8S1T5j41Z8hI4PXfYPRMUHAHySuCzZ866+ouf/HaO7lsz3GdMJYZtCbDqvPFLJBK63C+8AvcK18hNK1f07FH+9Hc3mRsQkmP/hHVORLBHEE8eTygq7jdIHTBUbgEKFf/w2Ja59YJqObC5aJMItZkjI2mRvRZDZXc4ERJXzmn9D7/h24sa0zmvAxcnWM6GQcJV3ceacPoUI4fHfjffDnaBVrbEmaAUtCkqa3QRL58MdEPvwhSt1I7imtirDjLkRFI5rnDkToIp6JwygVR6BRtvVHeDb9Q65qTSeM5TK9MMvPVM0neJ5t0HB//W8RDoh++q/IyCDO6q14tv0L1TWb0VwVyPBlJo7uxJD6dSZIZGzEbNdnbpcFXsCSkqRstooMER/uwdVwP6KkEiEERthP6L0fEA8cBmSyJ7RSfA++havxm7YkzYAlKUkzQUZHmPzwn4kPHkJGBlGxMTRPA56NL+D+vb9D5M7NmN4YSxJmxsJFSNyZD4VSEowoKh5KLmC6KhAly2YiC9iEAW4DSSqWbUtSEredJBUA0xtjJ+5szAmWIUy+2xJupd6FsAvdbjEfbZ8P2JK0uGB6YywTYdJhS5J1YRnC2JJkS1K+sCUpf5jeGMtEmHTYkmRdWIYwtiTZkpQvbEnKH6Y3xjIRJh22JFkXliGMLUm2JOULW5Lyh+mNsUyESYctSdaFZQhjS9LikKT/B0kWen+f1txuAAAAAElFTkSuQmCC";
 
 /***/ }),
 
