@@ -20,16 +20,15 @@ export default class Product extends Component {
 		   return null;
 		  }
 		}
-	
+
 linkToImage(str) {
-	console.log(str);
-	return "img"+str;
+	const noImageIcon =	"/static/img/icons/product-no-image.svg";
+	return str==="" ? "img"+noImageIcon :"img"+str;
 	//str.replace("https://images.rohlik.cz", "img/");		
 }
 
 linkToThumbnail(str) {
 	let thumbnail = str.replace(".jpg", "-260.jpg")
-	console.log(thumbnail);
 	return "img"+thumbnail;	
 }
 
