@@ -65976,14 +65976,13 @@ function (_Component) {
   }, {
     key: "linkToImage",
     value: function linkToImage(str) {
-      console.log(str);
-      return "img" + str; //str.replace("https://images.rohlik.cz", "img/");		
+      var noImageIcon = "/static/img/icons/product-no-image.svg";
+      return str === "" ? "img" + noImageIcon : "img" + str; //str.replace("https://images.rohlik.cz", "img/");		
     }
   }, {
     key: "linkToThumbnail",
     value: function linkToThumbnail(str) {
       var thumbnail = str.replace(".jpg", "-260.jpg");
-      console.log(thumbnail);
       return "img" + thumbnail;
     }
   }, {
